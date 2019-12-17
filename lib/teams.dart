@@ -3,10 +3,14 @@ import 'package:Cheerapp/widgets/avatar.dart';
 import 'package:flutter/material.dart';
 
 class TeamsView extends StatefulWidget {
-  TeamsView({Key key, this.title, this.teams}) : super(key: key);
+  TeamsView({Key key}) : super(key: key);
 
-  final String title;
-  final List<Team> teams;
+  final String title = 'HAC CHEER APP';
+  final List<Team> teams = [
+    Team(name: 'Elsa', color: Colors.red),
+    Team(name: 'Elsafant', color: Colors.orange),
+    Team(name: 'Minior Elsa', color: Colors.pink),
+  ];
 
   @override
   _TeamsViewState createState() => _TeamsViewState();
@@ -30,26 +34,30 @@ class _TeamsViewState extends State<TeamsView> {
         itemBuilder: (context, i) {
           return Padding(
             padding: EdgeInsets.fromLTRB(8, 8, 8, 0),
-            child: Card(
-                elevation: 2.2,
-                child: Padding(
-                  padding: EdgeInsets.all(16.0),
-                  child: Row(children: [
-                    Container(
-                        width: 56,
-                        height: 56,
-                        child: Avatar(team: widget.teams[i])),
-                    SizedBox(
-                      width: 16,
-                    ),
-                    Text(widget.teams[i].name)
-                  ]),
-                )),
+            child: GestureDetector(
+              onTap: () => Navigator.of(context).pushNamed('/team', arguments: widget.teams[i]),
+              onHorizontalDragEnd: (e) => Navigator.of(context).pushNamed('/team', arguments: widget.teams[i]),
+              child: Card(
+                  elevation: 2.2,
+                  child: Padding(
+                    padding: EdgeInsets.all(16.0),
+                    child: Row(children: [
+                      Container(
+                          width: 56,
+                          height: 56,
+                          child: Avatar(team: widget.teams[i])),
+                      SizedBox(
+                        width: 16,
+                      ),
+                      Text(widget.teams[i].name)
+                    ]),
+                  )),
+            ),
           );
         },
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: (){
+        onPressed: () {
           print('Click! =)');
         },
         tooltip: 'Increment',

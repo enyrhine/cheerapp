@@ -126,7 +126,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		KZqSFkBo27CNvGX9u+EfCWL6t3w=
+		Lde8UyUDFGXsyCdgcl/BSpQuisc=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>Frameworks/Flutter.framework/Flutter</key>
 		<data>
-		kWJ0LoDK//sJ1gCC3KCs9vqhG/8=
+		9E04XbxHtZ1MMaltZP0T+8TZhDc=
 		</data>
 		<key>Frameworks/Flutter.framework/Info.plist</key>
 		<data>
@@ -549,11 +549,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KZqSFkBo27CNvGX9u+EfCWL6t3w=
+			Lde8UyUDFGXsyCdgcl/BSpQuisc=
 			</data>
 			<key>hash2</key>
 			<data>
-			p00bvIAQVdtTVKsJXvHpGbP0qfRmULbvjzRnFZ1wlrE=
+			+poTuvderH2k3vd2db9Dtf3yWnQ+1C09XUqQvBfXttc=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -637,11 +637,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kWJ0LoDK//sJ1gCC3KCs9vqhG/8=
+			9E04XbxHtZ1MMaltZP0T+8TZhDc=
 			</data>
 			<key>hash2</key>
 			<data>
-			YJjIO1K01cMvzhvm5gyJpMPSryz8ugC8u5SMKiGNiY8=
+			JoWLcw2NKbuX3X/j2zDgOJ0WNg1HNv/u77k1XfmfyhQ=
 			</data>
 		</dict>
 		<key>Frameworks/Flutter.framework/Info.plist</key>
