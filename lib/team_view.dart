@@ -1,4 +1,5 @@
 import 'package:Cheerapp/model/team.dart';
+import 'package:Cheerapp/team_people_view.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -58,7 +59,11 @@ class _TeamViewState extends State<TeamView> {
             onPageChanged: (int) {
               print('Page Changes to index $int');
             },
-            children: <Widget>[Center(child: Text('1')), Center(child: Text('2')), Center(child: Text('3'))],
+            children: <Widget>[
+              TeamPeopleView(),
+              Center(child: Text('2')),
+              Center(child: Text('3'))
+            ],
           ),
         ));
   }
